@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdbool.h> //added for bool in task 4
 
 //arithmetic.c file for Operators section
 
@@ -79,6 +80,23 @@ int main()
 
     	a <<= 1; // a = a << 1 (left shift)
     	printf("After a <<= 1: a = %d\n", a);
+
+	//task 4  -  using the given code snippet with assigning equivalent values (int to bool)
+	bool isLoggedIn = true;
+	bool isAdmin = false;
+
+	printf("Regular user: %s\n", (isLoggedIn && !isAdmin) ? "true" : "false");
+	printf("Has access: %s\n", (isLoggedIn || isAdmin) ? "true" : "false");
+	printf("Not logged in: %s\n", (!isLoggedIn) ? "true" : "false");
+
+	//now we use the equivalent bool values (1 for true, 0 for false)
+	printf("\nBoolean Operations (using int equivalents)\n");
+    	int isLoggedIn_int = 1;    // equivalent to true
+    	int isAdmin_int = 0;       // equivalent to false
+
+    	printf("Regular user: %s\n", (isLoggedIn_int && !isAdmin_int) ? "true" : "false");
+    	printf("Has access: %s\n", (isLoggedIn_int || isAdmin_int) ? "true" : "false");
+    	printf("Not logged in: %s\n", (!isLoggedIn_int) ? "true" : "false");
 
 	return 0;
 }
