@@ -18,6 +18,29 @@ int main()
 	printf("double: %lf\n", oneDouble);
 	printf("char: %c\n", oneChar);
 
+	//task 3 (char initializations and ASCII values
+	char char1 = 'a', char2 = 'b', char3 = 'c';
+	char char4 = 'x', char5 = 'y', char6 = 'z';
+	char char7 = 'A', char8 = 'B', char9 = 'C';
+	char char10 = 'X', char11 = 'Y', char12 = 'Z';
+
+	//print first part  (no ascii yet)
+	printf("\nCharacters:\n");
+	printf("Lowercase: %c %c %c %c %c %c\n", char1, char2, char3, char4, char5, char6);
+	printf("Uppercase: %c %c %c %c %c %c\n", char7, char8, char9, char10, char11, char12);
+
+	//ascii initialization
+	char a1 = 97, a2 = 98, a3 = 99;
+	char a4 = 120, a5 = 121, a6 = 122;
+	char a7 = 65, a8 = 66, a9 = 67;
+	char a10 = 88, a11 = 89, a12 = 90;
+
+	//prints 2nd part (ascii values)
+	printf("\nASCII Values\n");
+	printf("Lowercase ASCII: %c %c %c %c %c %c\n", a1, a2, a3, a4, a5, a6);
+	printf("Uppercase ASCII: %c %c %c %c %c %c\n", a7, a8, a9, a10, a11, a12);
+
+
 	return 0;
 }
 
