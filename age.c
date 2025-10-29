@@ -5,8 +5,15 @@ int main()
 	//task 1 (regarding user's age, with if else if else statement depending on input
     	int age;
 
+	//asks to enter age
     	printf("Enter your age: ");
-    	scanf("%d", &age);
+
+	//checks for integer input to be valid with if:
+	if (scanf("%d", &age) != 1)
+	{
+		printf("Invalid input. Please enter an integer.\n");
+		return 1; //it exits here with the error code 1
+	}
 
     	if (age < 0)
 	{
