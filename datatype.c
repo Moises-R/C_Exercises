@@ -40,6 +40,14 @@ int main()
 	printf("Lowercase ASCII: %c %c %c %c %c %c\n", a1, a2, a3, a4, a5, a6);
 	printf("Uppercase ASCII: %c %c %c %c %c %c\n", a7, a8, a9, a10, a11, a12);
 
+	//task 4 (scientific numbers initialization, ex. of float+double and print
+	float floatSci = 3.14e3f;
+	double doubleSci = 1.23e-10;
+
+	//printing both sci numbers
+	printf("\nScientific Notation\n");
+	printf("Scientific float: %e\n", floatSci);
+	printf("Scientific double: %le\n", doubleSci);
 
 	return 0;
 }
