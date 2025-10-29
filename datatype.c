@@ -64,6 +64,19 @@ int main()
 	printf("double size: %zu bytes\n", sizeof(double));
 	printf("char size: %zu bytes\n", sizeof(char));
 
+	//task 7 (calculate dividing 2 variables, cast result to float
+	//also print w/ 3  decimal precisions, and convert to percent + print w/ 2 dec.
+	int dividend = 25;
+	int divisor = 7;
+
+	//cast it to float 
+	float quotient = (float)25/7;
+	//print answers 
+	printf("\nDivision & Casting of Ints\n");
+	printf("Quotient float rounded to 3 decimals: %.3f\n", quotient); //as float
+	printf("Quotient as percentage: %.2f%%\n", quotient * 100); //as percentage
+
+
 	return 0;
 }
 
