@@ -57,6 +57,13 @@ int main()
 	printf("4 Decimal: %.4f\n", preciseFloat);
 	printf("6 Decimal: %.6f\n", preciseFloat);
 
+	//task 6 (print sizes of the variables)
+	printf("\n Sizes of Data Types\n");
+	printf("int size: %zu bytes\n", sizeof(int));
+	printf("float size: %zu bytes\n", sizeof(float));
+	printf("double size: %zu bytes\n", sizeof(double));
+	printf("char size: %zu bytes\n", sizeof(char));
+
 	return 0;
 }
 
