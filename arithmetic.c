@@ -98,6 +98,15 @@ int main()
     	printf("Has access: %s\n", (isLoggedIn_int || isAdmin_int) ? "true" : "false");
     	printf("Not logged in: %s\n", (!isLoggedIn_int) ? "true" : "false");
 
+	//tastk 5 - given the variables, print results with && and ||
+	int aNew = 1, bNew = 0, cNew = 1;
+	printf("a = %d, b = %d, c = %d\n", aNew, bNew, cNew);
+    	printf("a && b || c = %d\n", aNew && bNew || cNew);
+    	printf("(a && b) || c = %d\n", (aNew && bNew) || cNew);
+    	printf("a || b && c = %d\n", aNew || bNew && cNew);
+    	printf("(a || b) && c = %d\n", (aNew || bNew) && cNew);
+    	printf("!a && b = %d\n", !aNew && bNew);
+
 	return 0;
 }
 
