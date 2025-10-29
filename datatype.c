@@ -76,6 +76,28 @@ int main()
 	printf("Quotient float rounded to 3 decimals: %.3f\n", quotient); //as float
 	printf("Quotient as percentage: %.2f%%\n", quotient * 100); //as percentage
 
+	//task 8 (extended types)
+	//variables
+	int normalInt = 1000;
+    	double normalDouble = 3.14;
+    	short int small = -100;
+    	unsigned int count = 25;
+    	long int big = 1234567890;
+    	long long int veryBig = 9223372036854775807;
+    	unsigned long long int huge = 18446744073709551615U;
+    	long double precise = 3.141592653589793238L;
+
+	//printing the extended types
+    	printf("\Extended Data Types\n");
+    	printf("normal Int: %d\n", normalInt);
+    	printf("normal Double: %lf\n", normalDouble);
+    	printf("small (short): %hd\n", small);
+    	printf("count (unsigned): %u\n", count);
+    	printf("big (long): %ld\n", big);
+    	printf("veryBig (long long): %lld\n", veryBig);
+    	printf("huge (unsigned long long): %llu\n", huge);
+    	printf("precise (long double): %Lf\n", precise);
+
 
 	return 0;
 }
