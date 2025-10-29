@@ -49,6 +49,14 @@ int main()
 	printf("Scientific float: %e\n", floatSci);
 	printf("Scientific double: %le\n", doubleSci);
 
+	//task 5 (deciminal precisions with float)
+	float preciseFloat =  1.12345678f; //8 digits after decimal
+	printf("\nFloat Precision\n");
+	printf("1 Decimal: %.1f\n", preciseFloat);
+	printf("2 Decimal: %.2f\n", preciseFloat);
+	printf("4 Decimal: %.4f\n", preciseFloat);
+	printf("6 Decimal: %.6f\n", preciseFloat);
+
 	return 0;
 }
 
