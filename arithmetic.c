@@ -42,5 +42,44 @@ int main()
     	printf("Using --x: %d\n", --x);  //decrements x FIRST, then uses x value
     	printf("After: x = %d\n", x);
 
+	//task 3 - more operators (-=, +=, *=, /=, %=, &=, |=, ^=, >>=, <<=, etc.
+	//setting a and b variables
+	int a = 9;
+	int b = 5;
+
+	//trying operators
+    	printf("Initial: a = %d, b = %d\n", a, b);
+
+    	a += b;  // a = a + b
+    	printf("After a += b: a = %d\n", a);
+
+    	a -= b;  // a = a - b
+    	printf("After a -= b: a = %d\n", a);
+
+    	a *= b;  // a = a * b
+    	printf("After a *= b: a = %d\n", a);
+
+    	a /= b;  // a = a / b
+    	printf("After a /= b: a = %d\n", a);
+
+    	a %= b;  // a = a % b
+    	printf("After a %%= b: a = %d\n", a);
+
+    	a &= b;  // a = a & b (bitwise AND)
+    	printf("After a &= b: a = %d\n", a);
+
+    	a |= b;  // a = a | b (bitwise OR)
+    	printf("After a |= b: a = %d\n", a);
+
+    	a ^= b;  // a = a ^ b (bitwise XOR)
+    	printf("After a ^= b: a = %d\n", a);
+
+    	a >>= 1; // a = a >> 1 (right shift)
+    	printf("After a >>= 1: a = %d\n", a);
+
+    	a <<= 1; // a = a << 1 (left shift)
+    	printf("After a <<= 1: a = %d\n", a);
+
 	return 0;
 }
+
